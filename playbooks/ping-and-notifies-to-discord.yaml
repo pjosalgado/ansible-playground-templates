@@ -8,7 +8,7 @@
         url: "{{DISCORD_WEBHOOK}}"
         method: POST
         body_format: json
-        body: '{"content": "{{DISCORD_MESSAGE}}"}'
+        body: '{"content": "**{{ansible_play_name}}** executed on host **{{inventory_hostname}}**"}'
         headers:
           Content-Type: application/json
         status_code: 204
