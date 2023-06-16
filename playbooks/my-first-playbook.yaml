@@ -3,12 +3,3 @@
   tasks:
     - name: Ping my hosts
       ansible.builtin.ping:
-    - name: Send message to Discord
-      uri:
-        url: "{{ansible_env.DISCORD_WEBHOOK}}"
-        method: POST
-        body_format: json
-        body: '{"content": "{{ansible_env.DISCORD_MESSAGE}}"}'
-        headers:
-          Content-Type: application/json
-        status_code: 204
