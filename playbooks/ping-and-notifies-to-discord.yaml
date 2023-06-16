@@ -1,4 +1,4 @@
-- name: My first play with Discord notification
+- name: Ping and notifies to Discord
   hosts: all
   tasks:
     - name: Ping my hosts
